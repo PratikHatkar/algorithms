@@ -1,4 +1,4 @@
-package algos.sorting
+package sorting
 
 import scala.collection.mutable
 
