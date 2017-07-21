@@ -9,10 +9,10 @@
 		extra-sbtVersion="0.13"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170712221019"/>
+		date="20170721112638"/>
 	<dependencies>
 		<module organisation="org.scala-sbt" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20170712221017" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20170721112214" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="algorithms-build" conf="test, compile, provided, test-internal, runtime, optional" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
@@ -596,7 +596,7 @@
 		<module organisation="jline" name="jline">
 			<revision name="2.11" status="release" pubdate="20130519120100" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="18">
 				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
-				<metadata-artifact status="successful" details="" size="16867" time="83" location="/Users/v723840/.ivy2/cache/jline/jline/ivy-2.11.xml" searched="true" original-local-location="/Users/v723840/.ivy2/cache/jline/jline/ivy-2.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jline/jline/2.11/jline-2.11.pom"/>
+				<metadata-artifact status="successful" details="" size="16867" time="110" location="/Users/v723840/.ivy2/cache/jline/jline/ivy-2.11.xml" searched="true" original-local-location="/Users/v723840/.ivy2/cache/jline/jline/ivy-2.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jline/jline/2.11/jline-2.11.pom"/>
 				<caller organisation="org.scala-sbt" name="completion" conf="compile" rev="2.11" rev-constraint-default="2.11" rev-constraint-dynamic="2.11" callerrev="0.13.8"/>
 				<caller organisation="org.scala-sbt" name="logging" conf="compile" rev="2.11" rev-constraint-default="2.11" rev-constraint-dynamic="2.11" callerrev="0.13.8"/>
 				<artifacts>
@@ -722,19 +722,19 @@
 		<module organisation="org.scala-lang" name="scala-compiler">
 			<revision name="2.10.4" status="release" pubdate="20140318144738" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="10">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
-				<metadata-artifact status="no" details="" size="2809" time="0" location="/Users/v723840/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4.pom"/>
+				<metadata-artifact status="no" details="" size="2953" time="0" location="/Users/v723840/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4.pom"/>
 				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>
 				<caller organisation="org.scala-sbt" name="classpath" conf="compile" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.13.8"/>
 				<caller organisation="org.scala-sbt" name="apply-macro" conf="compile" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.13.8"/>
 				<artifacts>
 					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="14445780" time="0" location="/Users/v723840/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.10.4.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4.jar"/>
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.10.4" status="release" pubdate="20140318144707" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+			<revision name="2.10.4" status="release" pubdate="20140318144707" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
 				<metadata-artifact status="no" details="" size="2829" time="0" location="/Users/v723840/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.pom"/>
 				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>

@@ -4,7 +4,7 @@
 		module="algorithms-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170712221019"
+		publication="20170721112638"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

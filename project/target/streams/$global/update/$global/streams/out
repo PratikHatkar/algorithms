@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/v723840/iptv/algorithms/project/}algorithms-build...
+[info] Updating {file:/Users/v723840/algorithms/project/}algorithms-build...
 [debug] :: resolving dependencies :: default#algorithms-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -271,11 +271,11 @@
 [debug] 	found org.scala-lang#scala-compiler;2.10.4 in sbt-chain
 [debug] == resolving dependencies org.scala-sbt#classpath;0.13.8->org.scala-lang#scala-compiler;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#classpath;0.13.8->org.scala-lang#scala-compiler;2.10.4 [compile->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.10.4 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.4
 [debug] 	found org.scala-lang#scala-reflect;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-reflect;2.10.4
@@ -375,7 +375,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/jline/jline/2.11/jline-2.11.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/jline/jline/2.11/jline-2.11.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/jline/jline/2.11/jline-2.11.pom
-[debug] 	[SUCCESSFUL ] jline#jline;2.11!jline.pom(pom.original) (83ms)
+[debug] 	[SUCCESSFUL ] jline#jline;2.11!jline.pom(pom.original) (110ms)
 [info] Resolving org.sonatype.oss#oss-parent;7 ...
 [debug] sbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}
 [debug] sbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7
@@ -1031,9 +1031,9 @@
 [debug] == resolving dependencies org.scala-sbt#classpath;0.13.8->org.scala-lang#scala-compiler;2.10.4 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#classpath;0.13.8->org.scala-lang#scala-compiler;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#classpath;0.13.8->org.scala-lang#scala-compiler;2.10.4 [compile->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
@@ -1633,9 +1633,9 @@
 [debug] == resolving dependencies org.scala-sbt#classpath;0.13.8->org.scala-lang#scala-compiler;2.10.4 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#classpath;0.13.8->org.scala-lang#scala-compiler;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#classpath;0.13.8->org.scala-lang#scala-compiler;2.10.4 [compile->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
@@ -2089,14 +2089,14 @@
 [debug] == resolving dependencies default#algorithms-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default]
 [debug] == resolving dependencies default#algorithms-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime]
 [debug] == resolving dependencies default#algorithms-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->default]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->optional(default)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
@@ -2108,9 +2108,9 @@
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
 [debug] == resolving dependencies default#algorithms-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master]
 [debug] == resolving dependencies default#algorithms-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#jline;2.10.4 [optional->master(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#jline;2.10.4 [optional->master(compile)]
 [info] Resolving org.scala-lang#jline;2.10.4 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.4 {optional=[compile(*), master(*)]}
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.4 {optional=[compile(*), master(compile)]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#jline;2.10.4
 [debug] 	found org.scala-lang#jline;2.10.4 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#jline;2.10.4 [optional->compile(*)]
@@ -2187,19 +2187,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 2730ms :: artifacts dl 30ms
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT compile produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-compile.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT runtime produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-runtime.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT test produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-test.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT provided produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-provided.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT optional produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-optional.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT compile-internal produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-compile-internal.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT runtime-internal produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-runtime-internal.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT test-internal produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-test-internal.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT plugin produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-plugin.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT sources produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-sources.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT docs produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-docs.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT pom produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-pom.xml
-[debug] 	report for default#algorithms-build;0.1-SNAPSHOT scala-tool produced in /Users/v723840/iptv/algorithms/project/target/resolution-cache/reports/default-algorithms-build-scala-tool.xml
-[debug] 	resolve done (2730ms resolve - 30ms download)
+[debug] :: resolution report :: resolve 5096ms :: artifacts dl 18ms
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT compile produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-compile.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT runtime produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-runtime.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT test produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-test.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT provided produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-provided.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT optional produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-optional.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT compile-internal produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-compile-internal.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT runtime-internal produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-runtime-internal.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT test-internal produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-test-internal.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT plugin produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-plugin.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT sources produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-sources.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT docs produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-docs.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT pom produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-pom.xml
+[debug] 	report for default#algorithms-build;0.1-SNAPSHOT scala-tool produced in /Users/v723840/algorithms/project/target/resolution-cache/reports/default-algorithms-build-scala-tool.xml
+[debug] 	resolve done (5096ms resolve - 18ms download)
 [info] Done updating.
