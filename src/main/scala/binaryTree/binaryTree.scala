@@ -18,8 +18,8 @@ object Node {
     root match {
       case Some(n) =>
         println(n.data)
-        inOrder(n.left)
-        inOrder(n.right)
+        preOrder(n.left)
+        preOrder(n.right)
       case _ =>
     }
   }
@@ -27,8 +27,8 @@ object Node {
   def postOrder(root: Option[Node]): Unit ={
     root match {
       case Some(n) =>
-        inOrder(n.left)
-        inOrder(n.right)
+        postOrder(n.left)
+        postOrder(n.right)
         println(n.data)
       case _ =>
     }
@@ -80,7 +80,7 @@ object Node {
 
     if(curr.isDefined && curr.get.left.isEmpty && curr.get.right.isEmpty) {
 
-      if (curr.get == root) () // root wast node to be deleted
+      if (curr.get == root) () // root was node to be deleted
       else if (isLeftChild) parent.get.left = None
       else parent.get.right = None
     }
@@ -99,8 +99,8 @@ object Node {
 
     if(curr.isDefined && curr.get.left.isDefined && curr.get.right.isDefined) {
 
-      if(isLeftChild) curr.get.left = Some(getSuccessor(curr.get))
-      else curr.get.right = Some(getSuccessor(curr.get))
+      if(isLeftChild) parent.get.left = Some(getSuccessor(curr.get))
+      else parent.get.right = Some(getSuccessor(curr.get))
     }
   }
 
@@ -118,7 +118,7 @@ object Node {
 
     if(successor != delNode.right.get){
       successorParent.left = successor.right
-      successorParent.right = delNode.right
+      successor.right = delNode.right
     }
 
     successor
