@@ -60,67 +60,77 @@ object Node {
     }
   }
 
-  def delete(root: Node, delData: Int): Unit = {
-    var curr: Option[Node] = Some(root)
-    var parent: Option[Node] = Some(root)
-    var isLeftChild = false
+  def delete(root: Option[Node], dData:Int): Node = {
 
-    while(curr.isDefined && curr.get.data != delData){
+    var currNode: Option[Node] = root
+    var parentNode: Option[Node] = None
+    var isLeftChild: Boolean = false
+    var rootNode : Node = root.get
 
-      parent = curr
-
-      if(delData < curr.get.data){
-        isLeftChild = true
-        curr = curr.get.left
-      } else {
-        isLeftChild = false
-        curr = curr.get.right
+    while (currNode.isDefined && dData != currNode.get.data) {
+      parentNode = currNode
+      dData match {
+        case x if x < currNode.get.data =>
+          isLeftChild = true
+          currNode = currNode.get.left
+        case x if x > currNode.get.data =>
+          isLeftChild = false
+          currNode = currNode.get.right
+        case _ =>
       }
     }
 
-    if(curr.isDefined && curr.get.left.isEmpty && curr.get.right.isEmpty) {
+    if (currNode.isDefined && currNode.get.left.isEmpty && currNode.get.right.isEmpty)
+      isLeftChild match {
+        case true if parentNode.isDefined => parentNode.get.left = None
+        case false if parentNode.isDefined => parentNode.get.right = None
+        case _ => 
+      }
 
-      if (curr.get == root) () // root was node to be deleted
-      else if (isLeftChild) parent.get.left = None
-      else parent.get.right = None
+
+    if (currNode.isDefined && currNode.get.left.isEmpty && currNode.get.right.nonEmpty)
+      isLeftChild match {
+        case true if parentNode.isDefined => parentNode.get.left = currNode.get.right
+        case false if parentNode.isDefined => parentNode.get.right = currNode.get.right
+        case _ => 
+      }
+
+
+    if (currNode.isDefined && currNode.get.left.isEmpty && currNode.get.left.nonEmpty)
+      isLeftChild match {
+        case true if parentNode.isDefined => parentNode.get.left = currNode.get.left
+        case false if parentNode.isDefined => parentNode.get.right = currNode.get.left
+        case _ => 
+      }
+
+
+    if (currNode.isDefined && currNode.get.left.nonEmpty && currNode.get.right.nonEmpty) {
+      val successor = findSuccessor(currNode.get)
+      parentNode match {
+        case Some(x) if isLeftChild => x.left = Some(successor)
+        case Some(x) => x.right = Some(successor)
+        case _ => rootNode = successor
+      }
     }
-
-    if(curr.isDefined && curr.get.left.isDefined && curr.get.right.isEmpty) {
-
-      if(isLeftChild) parent.get.left = curr.get.left
-      else parent.get.right = curr.get.left
-    }
-
-    if(curr.isDefined && curr.get.right.isDefined && curr.get.left.isEmpty) {
-
-      if(isLeftChild) parent.get.left = curr.get.right
-      else parent.get.right = curr.get.right
-    }
-
-    if(curr.isDefined && curr.get.left.isDefined && curr.get.right.isDefined) {
-
-      if(isLeftChild) parent.get.left = Some(getSuccessor(curr.get))
-      else parent.get.right = Some(getSuccessor(curr.get))
-    }
+    rootNode
   }
 
-  def getSuccessor(delNode: Node): Node = {
-
+  def findSuccessor(delNode: Node): Node = {
     var successorParent = delNode
     var successor = delNode
-    var curr = delNode.right
+    var currentNode = delNode.right
 
-    while(curr.isDefined){
+    while(currentNode.isDefined){
       successorParent = successor
-      successor = curr.get
-      curr = curr.get.left
+      successor = currentNode.get
+      currentNode = currentNode.get.left
     }
 
     if(successor != delNode.right.get){
       successorParent.left = successor.right
       successor.right = delNode.right
     }
-
+    successor.left = delNode.left
     successor
   }
 

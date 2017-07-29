@@ -23,7 +23,7 @@ object algo extends App {
     println(s"binary search tree output for node with data 11 - ${ Node.search(root, 11)}")
     println(s"binary search tree output for node with data 13 - ${ Node.search(root, 13)}")
 
-    Node.delete(root, 2)
+    Node.delete(Some(root), 2)
 
     println(s"binary search tree output for node with data 2 - ${ Node.search(root, 2)}")
 
